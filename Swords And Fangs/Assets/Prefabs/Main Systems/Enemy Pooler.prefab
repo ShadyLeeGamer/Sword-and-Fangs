@@ -1,0 +1,63 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4447811841486327802
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4447811841486327800}
+  - component: {fileID: 4447811841486327803}
+  m_Layer: 0
+  m_Name: Enemy Pooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4447811841486327800
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4447811841486327802}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4447811841486327803
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4447811841486327802}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5addb32773169b240a7a96a10ec90baf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  recycle: 1
+  enemyPrefabs:
+  - {fileID: 6219928844988500762, guid: b136fbeaa97087c4db5710ac9564b302, type: 3}
+  - {fileID: 6219928844988500762, guid: 5473828e8cddd1c45829a8625ef7bd4f, type: 3}
+  - {fileID: 6219928844988500762, guid: 4fea7c968a4d351438c9db23d320fdd6, type: 3}
+  - {fileID: 6219928844988500762, guid: 8df9526ec0eb9934ebe97c4563c6ddd9, type: 3}
+  - {fileID: 6219928844988500762, guid: 3420362c89aabbd4f98e0d14a7c40756, type: 3}
+  - {fileID: 6219928844988500762, guid: b93dce023615341de81e44576f1605f5, type: 3}
+  - {fileID: 6219928844988500762, guid: 9090952810657db43a61215feb88dc19, type: 3}
+  - {fileID: 6219928844988500762, guid: cf636e66fa89f5347bd29fc665221adb, type: 3}
+  projectilePrefabs:
+  - {fileID: 601199862280788978, guid: 99b8e989f09307f4d948ffb1bf6db421, type: 3}
+  - {fileID: 288512816622822946, guid: 4b90a73395af78b498793458a4324cce, type: 3}
+  combatTextPrefabs:
+  - {fileID: -8917655592264260237, guid: 17dfaf479882f6e4b94433b17df43560, type: 3}
+  - {fileID: -969062053948250484, guid: 3c393aeedc879fe48a8482d728908a5b, type: 3}
+  enemyImpactPrefab: {fileID: 8113869227519924595, guid: 3878a3e157d10415084d7215ba81c016, type: 3}
+  audioPlayerPrefab: {fileID: 2638856713961681707, guid: b159b2c35296f574ca5329083822549f, type: 3}

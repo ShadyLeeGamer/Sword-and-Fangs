@@ -1,0 +1,409 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &6861320136372749310
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6861320136372749308}
+  - component: {fileID: 6861320136372749309}
+  m_Layer: 0
+  m_Name: Spawn Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6861320136372749308
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6861320136372749310}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 30, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6861320136372749309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6861320136372749310}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e65c4112ea6a524781edcdecd141052, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyPrefabs:
+  - {fileID: 6219928844988500762, guid: b136fbeaa97087c4db5710ac9564b302, type: 3}
+  - {fileID: 6219928844988500762, guid: 5473828e8cddd1c45829a8625ef7bd4f, type: 3}
+  - {fileID: 6219928844988500762, guid: 4fea7c968a4d351438c9db23d320fdd6, type: 3}
+  - {fileID: 6219928844988500762, guid: 8df9526ec0eb9934ebe97c4563c6ddd9, type: 3}
+  - {fileID: 6219928844988500762, guid: 3420362c89aabbd4f98e0d14a7c40756, type: 3}
+  - {fileID: 6219928844988500762, guid: b93dce023615341de81e44576f1605f5, type: 3}
+  - {fileID: 6219928844988500762, guid: 9090952810657db43a61215feb88dc19, type: 3}
+  - {fileID: 6219928844988500762, guid: cf636e66fa89f5347bd29fc665221adb, type: 3}
+  enemyColours:
+  - {r: 1, g: 1, b: 1, a: 1}
+  - {r: 1, g: 0, b: 0, a: 1}
+  - {r: 0, g: 1, b: 0, a: 1}
+  - {r: 0.49803922, g: 0, b: 1, a: 1}
+  - {r: 0, g: 0, b: 1, a: 1}
+  - {r: 1, g: 1, b: 0, a: 1}
+  - {r: 0.49803922, g: 0, b: 0, a: 1}
+  - {r: 0, g: 0, b: 0, a: 1}
+  spawnRangeMin: 15
+  spawnRangeMax: 20
+  spawnStartDelay: 3
+  waves:
+  - enemyCount: 10
+    spawnChancesGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 1, a: 1}
+      key1: {r: 1, g: 0, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 1, a: 0}
+      key3: {r: 0, g: 0, b: 1, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 53235
+      ctime1: 65535
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 1
+      m_NumColorKeys: 2
+      m_NumAlphaKeys: 2
+    delayBetweenSpawns: 0.5
+  - enemyCount: 15
+    spawnChancesGradient:
+      serializedVersion: 2
+      key0: {r: 0.49803922, g: 0, b: 1, a: 1}
+      key1: {r: 1, g: 1, b: 1, a: 1}
+      key2: {r: 1, g: 0, b: 0, a: 0}
+      key3: {r: 0, g: 0, b: 1, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 2120
+      ctime1: 35081
+      ctime2: 65535
+      ctime3: 65535
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 1
+      m_NumColorKeys: 3
+      m_NumAlphaKeys: 2
+    delayBetweenSpawns: 0.5
+  - enemyCount: 20
+    spawnChancesGradient:
+      serializedVersion: 2
+      key0: {r: 0.49803922, g: 0, b: 0, a: 1}
+      key1: {r: 0, g: 1, b: 0, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 4626
+      ctime1: 27563
+      ctime2: 48959
+      ctime3: 65535
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 1
+      m_NumColorKeys: 4
+      m_NumAlphaKeys: 2
+    delayBetweenSpawns: 1
+  - enemyCount: 25
+    spawnChancesGradient:
+      serializedVersion: 2
+      key0: {r: 0.49803922, g: 0, b: 1, a: 1}
+      key1: {r: 0, g: 1, b: 0, a: 1}
+      key2: {r: 0.49803922, g: 0, b: 0, a: 0}
+      key3: {r: 1, g: 0, b: 0, a: 0}
+      key4: {r: 1, g: 0, b: 0, a: 0}
+      key5: {r: 1, g: 0, b: 0, a: 0}
+      key6: {r: 1, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 6939
+      ctime1: 45489
+      ctime2: 57054
+      ctime3: 65535
+      ctime4: 65535
+      ctime5: 65535
+      ctime6: 65535
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 1
+      m_NumColorKeys: 4
+      m_NumAlphaKeys: 2
+    delayBetweenSpawns: 1
+  - enemyCount: 30
+    spawnChancesGradient:
+      serializedVersion: 2
+      key0: {r: 0.49803922, g: 0, b: 1, a: 1}
+      key1: {r: 0, g: 1, b: 0, a: 1}
+      key2: {r: 1, g: 1, b: 1, a: 0}
+      key3: {r: 1, g: 0, b: 0, a: 0}
+      key4: {r: 0.49803922, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 12143
+      ctime1: 41056
+      ctime2: 43369
+      ctime3: 57054
+      ctime4: 65535
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 1
+      m_NumColorKeys: 5
+      m_NumAlphaKeys: 2
+    delayBetweenSpawns: 2
+  - enemyCount: 35
+    spawnChancesGradient:
+      serializedVersion: 2
+      key0: {r: 0, g: 0, b: 1, a: 1}
+      key1: {r: 0.49803922, g: 0, b: 1, a: 1}
+      key2: {r: 0, g: 1, b: 0, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 6554
+      ctime1: 19082
+      ctime2: 42405
+      ctime3: 46260
+      ctime4: 65535
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 1
+      m_NumColorKeys: 5
+      m_NumAlphaKeys: 2
+    delayBetweenSpawns: 1
+  - enemyCount: 40
+    spawnChancesGradient:
+      serializedVersion: 2
+      key0: {r: 0, g: 0, b: 1, a: 1}
+      key1: {r: 0.49803922, g: 0, b: 1, a: 1}
+      key2: {r: 0, g: 1, b: 0, a: 0}
+      key3: {r: 1, g: 1, b: 1, a: 0}
+      key4: {r: 1, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 6554
+      ctime1: 21974
+      ctime2: 39707
+      ctime3: 39899
+      ctime4: 65535
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 1
+      m_NumColorKeys: 5
+      m_NumAlphaKeys: 2
+    delayBetweenSpawns: 1
+  - enemyCount: 45
+    spawnChancesGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 1, a: 1}
+      key2: {r: 0.49803922, g: 0, b: 1, a: 0}
+      key3: {r: 0, g: 1, b: 0, a: 0}
+      key4: {r: 1, g: 1, b: 1, a: 0}
+      key5: {r: 1, g: 0, b: 0, a: 0}
+      key6: {r: 1, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 2120
+      ctime1: 16191
+      ctime2: 26021
+      ctime3: 54548
+      ctime4: 56476
+      ctime5: 65535
+      ctime6: 65535
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 1
+      m_NumColorKeys: 6
+      m_NumAlphaKeys: 2
+    delayBetweenSpawns: 2
+  - enemyCount: 50
+    spawnChancesGradient:
+      serializedVersion: 2
+      key0: {r: 1, g: 1, b: 0, a: 1}
+      key1: {r: 0, g: 0, b: 1, a: 1}
+      key2: {r: 0.49803922, g: 0, b: 1, a: 0}
+      key3: {r: 0, g: 1, b: 0, a: 0}
+      key4: {r: 0.49803922, g: 0, b: 0, a: 0}
+      key5: {r: 1, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 2120
+      ctime1: 16191
+      ctime2: 26021
+      ctime3: 40285
+      ctime4: 56476
+      ctime5: 65535
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 1
+      m_NumColorKeys: 6
+      m_NumAlphaKeys: 2
+    delayBetweenSpawns: 2
+  - enemyCount: 50
+    spawnChancesGradient:
+      serializedVersion: 2
+      key0: {r: 0, g: 0, b: 0, a: 1}
+      key1: {r: 1, g: 1, b: 0, a: 1}
+      key2: {r: 0.49803922, g: 0, b: 0, a: 0}
+      key3: {r: 1, g: 0, b: 0, a: 0}
+      key4: {r: 0, g: 0, b: 0, a: 0}
+      key5: {r: 0, g: 0, b: 0, a: 0}
+      key6: {r: 0, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 5012
+      ctime1: 26407
+      ctime2: 36623
+      ctime3: 65535
+      ctime4: 0
+      ctime5: 0
+      ctime6: 0
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 1
+      m_NumColorKeys: 4
+      m_NumAlphaKeys: 2
+    delayBetweenSpawns: 2
+  - enemyCount: 50
+    spawnChancesGradient:
+      serializedVersion: 2
+      key0: {r: 0, g: 0, b: 0, a: 1}
+      key1: {r: 1, g: 1, b: 0, a: 1}
+      key2: {r: 0, g: 0, b: 1, a: 0}
+      key3: {r: 0.49803922, g: 0, b: 1, a: 0}
+      key4: {r: 0, g: 1, b: 0, a: 0}
+      key5: {r: 0.49803922, g: 0, b: 0, a: 0}
+      key6: {r: 1, g: 0, b: 0, a: 0}
+      key7: {r: 0, g: 0, b: 0, a: 0}
+      ctime0: 8096
+      ctime1: 18504
+      ctime2: 26407
+      ctime3: 39514
+      ctime4: 48188
+      ctime5: 55898
+      ctime6: 65535
+      ctime7: 0
+      atime0: 0
+      atime1: 65535
+      atime2: 0
+      atime3: 0
+      atime4: 0
+      atime5: 0
+      atime6: 0
+      atime7: 0
+      m_Mode: 1
+      m_NumColorKeys: 7
+      m_NumAlphaKeys: 2
+    delayBetweenSpawns: 2
+  currentWaveIndex: 8
